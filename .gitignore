@@ -2,7 +2,9 @@
 __pycache__/
 data/
 *logs/
-run*/
+*run*/
 testi/
 tmp_trainer/
 voxpopuli-finetuned/
+*checkpoint.ipynb
+.ipynb_checkpoints/
