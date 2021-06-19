@@ -8,3 +8,4 @@ tmp_trainer/
 voxpopuli-finetuned/
 *checkpoint.ipynb
 .ipynb_checkpoints/
+best_model/
