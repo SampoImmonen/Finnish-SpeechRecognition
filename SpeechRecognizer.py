@@ -144,10 +144,10 @@ class CTCDecoder:
 
 if __name__ == "__main__":
 
-    recog = SpeechRecognizer(model_dir="data/voxpopuli-finetuned/")
-    pred, logits = recog("data/testi.mp3")
+    recognizer = SpeechRecognizer(model_dir="data/voxpopuli-finetuned/")
+    pred, logits = recognizer("data/testi.mp3")
     print(pred)
-    labels, blank = recog.get_labels()
+    labels, blank = recognizer.get_labels()
     #print(labels, blank)
-    decoder = CTCDecoder(labels, lm_path="data/model2.bin" ,blank_id=31)
+    decoder = CTCDecoder(labels, lm_path="data/model2.bin" ,blank_id=blank)
     print(decoder.decode(logits.softmax(dim=2).cpu()))

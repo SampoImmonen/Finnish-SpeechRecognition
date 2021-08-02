@@ -2,6 +2,8 @@
 
 ## project to build a fully functioning finnish speech recognition system
 
+## Training
+
 ## Acoustic Model
 uses facebooks wav2vec2.0 pretrained with voxpopuli data as base (https://github.com/facebookresearch/voxpopuli)
 
@@ -10,8 +12,9 @@ uses facebooks wav2vec2.0 pretrained with voxpopuli data as base (https://github
 ## Usage
 
 ### Sample:
-    
 
+
+## Data:
 Data used for finetuning
 1. Finnish common voice
 2. finnish single speaker corpus 
@@ -19,7 +22,7 @@ Data used for finetuning
 4. privately collected dataset
 
 
-# currently best model
+# Currently best model
 Word error rate on common voice test
 1. with language model:
 2. without language model:
