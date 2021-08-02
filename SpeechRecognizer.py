@@ -7,7 +7,10 @@ from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor, Wav2Vec2CTCTokenizer
 from ctcdecode import CTCBeamDecoder
 
 class SpeechRecognizer:
+    """
+    main class for speech recognition
     
+    """
     def __init__(self, model_dir=None, hub_name=None,device="cuda"):
         
         #if model comes locally
@@ -30,7 +33,6 @@ class SpeechRecognizer:
         
     def _prepareaudio(self, path : str):
         # load audio
-        # regex
         audio, sr = torchaudio.load(path)
         audio = audio[0]
         audio = librosa.resample(audio.numpy().squeeze(), sr, 16_000)
@@ -92,6 +94,11 @@ class SpeechRecognizer:
 
 class CTCDecoder:
 
+    """"
+    Class to use CTCBeamsearch for decoding
+    uses a kenlm ngram languaged model as additional resource
+    Initializing with a large language model takes a couple of minutes
+    """
     def __init__(self, 
             labels, 
             lm_path=None, 

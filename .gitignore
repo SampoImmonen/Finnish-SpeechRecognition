@@ -7,5 +7,5 @@ testi/
 tmp_trainer/
 voxpopuli-finetuned/
 *checkpoint.ipynb
-.ipynb_checkpoints/
+.ipynb_checkpoints
 best_model/
