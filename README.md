@@ -20,8 +20,10 @@
 Two main classes in SpeechRecognizer.py
 - SpeechRecognizer and CTCDecoder
 
-kuva SpeecRecognizer.py
-mitä pitää olla kansiossa
+![alt text](images/sample.png)
+
+SpeechRecognizer constructor takes as input a directory that contains the model files
+SpeechRecognizer __call__ method can takes as input an audio file or a numpy array
 
 ### Sample:
 
