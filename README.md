@@ -20,7 +20,7 @@
 Two main classes in SpeechRecognizer.py
 - SpeechRecognizer and CTCDecoder
 
-![alt text](images/sample.png)
+![alt text](https://github.com/SampoImmonen/Finnish-SpeechRecognition/blob/main/images/sample.PNG)
 
 SpeechRecognizer constructor takes as input a directory that contains the model files
 SpeechRecognizer __call__ method can takes as input an audio file or a numpy array
@@ -49,3 +49,4 @@ Word error rate on more difficult and larger testset created from parliament spe
 
 Instructions how to train your own kenLM language models: https://github.com/kmario23/KenLM-training
 
+## SpeechCollector
