@@ -50,3 +50,6 @@ Word error rate on more difficult and larger testset created from parliament spe
 Instructions how to train your own kenLM language models: https://github.com/kmario23/KenLM-training
 
 ## SpeechCollector
+
+As part of this project I made for a browser tool to collect your own speech data or annotate clips from youtube
+SpeechCollector (https://github.com/SampoImmonen/SpeechCollector)
