@@ -20,11 +20,14 @@
 Two main classes in SpeechRecognizer.py
 - SpeechRecognizer and CTCDecoder
 
-kuva SpeecRecognizer.py
-mitä pitää olla kansiossa
+![alt text](https://github.com/SampoImmonen/Finnish-SpeechRecognition/blob/main/images/sample.PNG)
 
-### Sample:
+SpeechRecognizer constructor takes as input a directory that contains the model files
+Directory has to include vocab.json and config.json for the tokenizer and model.bin for the Network.
+SpeechRecognizer __call__ method can takes as input an audio file or a numpy array
 
+#### NOTE: 
+Initializing the CTCDecoder might take a few minutes if your Language model is large
 
 ## Data:
 Data used for finetuning
@@ -33,11 +36,10 @@ Data used for finetuning
 3. finnish voxpopuli data
 4. privately collected dataset
 
-
 # Currently best model
 Word error rate on common voice test
 1. with language model: 8.89
-2. without language model: 15.21
+2. without language model: 15.54
 
 Word error rate on more difficult and larger testset created from parliament speeches
 1. with language model: 17.77
@@ -46,4 +48,9 @@ Word error rate on more difficult and larger testset created from parliament spe
 ## KenLM
 
 Instructions how to train your own kenLM language models: https://github.com/kmario23/KenLM-training
+
+## SpeechCollector
+
+As part of this project I made for a browser tool to collect your own speech data or annotate clips from youtube
+SpeechCollector (https://github.com/SampoImmonen/SpeechCollector)
 
