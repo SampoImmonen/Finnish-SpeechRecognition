@@ -21,7 +21,6 @@ Two main classes in SpeechRecognizer.py
 - SpeechRecognizer and CTCDecoder
 
 ![alt text](https://github.com/SampoImmonen/Finnish-SpeechRecognition/blob/main/images/sample.PNG)
-<<<<<<< HEAD
 
 SpeechRecognizer constructor takes as input a directory that contains the model files
 Directory has to include vocab.json and config.json for the tokenizer and model.bin for the Network.
@@ -29,12 +28,6 @@ SpeechRecognizer __call__ method can takes as input an audio file or a numpy arr
 
 #### NOTE: 
 Initializing the CTCDecoder might take a few minutes if your Language model is large
-=======
-
-SpeechRecognizer constructor takes as input a directory that contains the model files
-Directory has to include vocab.json and config.json for the tokenizer and model.bin for the Network.
-SpeechRecognizer __call__ method can takes as input an audio file or a numpy array
->>>>>>> a7ee99b2b6f1181c9496acaebf382603fe77bc8a
 
 ## Data:
 Data used for finetuning
@@ -60,7 +53,3 @@ Instructions how to train your own kenLM language models: https://github.com/kma
 
 As part of this project I made for a browser tool to collect your own speech data or annotate clips from youtube
 SpeechCollector (https://github.com/SampoImmonen/SpeechCollector)
-<<<<<<< HEAD
-
-=======
->>>>>>> a7ee99b2b6f1181c9496acaebf382603fe77bc8a
