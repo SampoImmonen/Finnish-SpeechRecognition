@@ -23,10 +23,8 @@ Two main classes in SpeechRecognizer.py
 ![alt text](https://github.com/SampoImmonen/Finnish-SpeechRecognition/blob/main/images/sample.PNG)
 
 SpeechRecognizer constructor takes as input a directory that contains the model files
+Directory has to include vocab.json and config.json for the tokenizer and model.bin for the Network.
 SpeechRecognizer __call__ method can takes as input an audio file or a numpy array
-
-### Sample:
-
 
 ## Data:
 Data used for finetuning
@@ -35,11 +33,10 @@ Data used for finetuning
 3. finnish voxpopuli data
 4. privately collected dataset
 
-
 # Currently best model
 Word error rate on common voice test
 1. with language model: 8.89
-2. without language model: 15.21
+2. without language model: 15.54
 
 Word error rate on more difficult and larger testset created from parliament speeches
 1. with language model: 17.77
