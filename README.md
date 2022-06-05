@@ -51,5 +51,5 @@ Instructions how to train your own kenLM language models: https://github.com/kma
 
 ## SpeechCollector
 
-As part of this project I made for a browser tool to collect your own speech data or annotate clips from youtube
+As part of this project I made a browser tool to collect your own speech data or annotate clips from youtube
 SpeechCollector (https://github.com/SampoImmonen/SpeechCollector)
